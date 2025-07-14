@@ -1,6 +1,3 @@
-/* eslint-disable react/prop-types */
-import React from "react";
-
 export default function CoreConcept({ title, description, image }) {
   return (
     <li>
