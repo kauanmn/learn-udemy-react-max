@@ -10,6 +10,7 @@ export default defineConfig([
   { files: ["**/*.{js,mjs,cjs,jsx}"], plugins: { js }, extends: ["js/recommended"] },
   { files: ["**/*.{js,mjs,cjs,jsx}"], languageOptions: { globals: globals.browser } },
   pluginReact.configs.flat.recommended,
+  { files: ["**/*.{js,mjs,cjs,jsx}"], rules: { "react/prop-types": "off", "react/react-in-jsx-scope": "off" } },
   { files: ["**/*.json"], plugins: { json }, language: "json/json", extends: ["json/recommended"] },
   { files: ["**/*.css"], plugins: { css }, language: "css/css", extends: ["css/recommended"] },
 ]);
